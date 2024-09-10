@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 def validate_input(name, email, password,confirm_password,phone_no):
     if not name or not email or not password or not confirm_password or not phone_no:
-        return "All fields should be filled"
+        return "All filled"
     if "@" not in email or ".com" not in email:
         return "Email should contain @ and ."
     if len(password)<8:
